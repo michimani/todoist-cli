@@ -5,6 +5,7 @@ This is simple command line tool for Todoist.
 
 # Feature
 
+- list projects
 - add a task
 
 # Usage
@@ -38,6 +39,20 @@ This is simple command line tool for Todoist.
     ```
 
 ## Use CLI
+
+### list projects
+
+```
+$ python src/list-projects.py -h
+usage: list-projects.py [-h] [-f FULL_SYNC]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FULL_SYNC, --full_sync FULL_SYNC
+                        "1" for full sync
+```
+
+- `-f` is optional parameter for *full_sync* with value `1`
 
 ### add a task
 

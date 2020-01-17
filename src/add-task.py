@@ -2,7 +2,6 @@
 import argparse
 import configparser
 import os
-import sys
 import todoist
 
 p = argparse.ArgumentParser()
@@ -19,9 +18,9 @@ TODOIST_TOKEN = c.get('todoist', 'token')
 def add_task(task_name, project_id=''):
     api = todoist.TodoistAPI(TODOIST_TOKEN)
     if project_id != '':
-        item = api.add_item(task_name, project_id=project_id)
+        api.add_item(task_name, project_id=project_id)
     else:
-        item = api.add_item(task_name)
+        api.add_item(task_name)
 
     api.commit()
 
