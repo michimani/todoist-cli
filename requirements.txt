@@ -1,7 +1,7 @@
 autopep8==1.4.4
 certifi==2023.7.22
 chardet==3.0.4
-idna==2.8
+idna==3.7
 pycodestyle==2.5.0
 requests==2.31.0
 todoist-python==8.1.1
